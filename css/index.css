@@ -1,0 +1,165 @@
+html,
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: 1s;
+    height: 100%;
+}
+
+#home, #product, #contact, #service, #about{
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.highlight {
+    background-color: #EEEEEE;
+    color: #221616;
+}
+
+#product,
+#contact,
+#service,
+#about,
+#contact {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.moto {
+    color: #EEEEEE;
+}
+
+#home {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    min-height: 100vh;
+    max-width: 100%;
+    height: 600px;
+}
+
+.parallax {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(117, 117, 117, 0.5)), url(../img/header_img3.jpg);
+}
+
+.header {
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, 100%);
+}
+
+nav {
+    background-color: black !important;
+}
+
+nav ul a:hover {
+    background-color: #EEEEEE !important;
+    color: black;
+}
+
+hr {
+    border: none;
+    border-top: 5px double #EEEEEE;
+    color: #EEEEEE;
+    overflow: visible;
+    opacity: 50%;
+    text-align: center;
+    height: 5pt;
+    width: 50%;
+}
+
+hr:after {
+    background: rgb(0, 0, 0);
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+h1 {
+
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 6em;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+.material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.verticalLine {
+    border-left: thin solid #EEEEEE;
+  }
+
+.btnOpacity{
+    opacity: 0.5;
+    margin: -15px;
+}
+
+/* 
+
+
+
+.waves-effect.waves-brown .waves-ripple {
+    background-color: #EEEEEE !important;
+}
+
+
+body {
+    background-color: #222831;
+}
+
+
+.full-height {
+    text-align: center;
+    min-height: 100vh;
+}
+
+.cardBox {
+    border: 1pt solid #222831;
+    border-radius: 5%;
+    ;
+    height: 400px;
+}
+
+.cardShadow {
+    box-shadow: 0 5px 5px #EEEEEE, 0 5px 10px #00ADB5;
+}
+
+
+
+header h1 {
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 70px;
+}
+
+header h2 {
+    text-align: center;
+    color: #EEEEEE;
+}
+
+h4 {
+    text-align: left;
+}
+
+p {
+    color: #EEEEEE;
+}
+*/

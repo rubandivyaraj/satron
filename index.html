@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize css -->
+    <link rel="stylesheet" href="css/materialize/materialize.min.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <script type='text/javascript' src="js/jquery-3.6.0.min.js"></script>
+    <script type='text/javascript' src="js/index.js"></script>
+</head>
+
+
+<body>
+    <!-- Header and Home Section-->
+    <header id="home" class="parallax">
+        <section class="navbar-fixed ">
+            <nav class="nav-wrapper">
+                <div class="container">
+                    <a href="index.html" class="brand-logo"><i class="material-icons">line-style</i>satron</a>
+
+                    <a href="#" class="sidenav-trigger" data-target="mobile"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down nav navbar-nav">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#product">PRODUCTS</a></li>
+                        <li><a href="#service">SERVICES</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+
+                    <ul class="sidenav black" id="mobile">
+                        <li><a class="waves-effect waves-light white-text" href="#home">HOME</a></li>
+                        <li><a class="waves-effect waves-light white-text" href="#product">PRODUCTS</a></li>
+                        <li><a class="waves-effect waves-light white-text" href="#service">SERVICES</a></li>
+                        <li><a class="waves-effect waves-light white-text" href="#about">ABOUT</a></li>
+                        <li><a class="waves-effect waves-light white-text" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <section class="center header">
+            <h1 id="headerName">SATRON ENGINEERING</h1>
+            <hr />
+            <p class="moto">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                velit...</p>
+        </section>
+    </header>
+    <div class="center pulse"><a class=" btn-floating btn-large waves-light pulse black btnOpacity" href="#product"> <i class="material-icons">keyboard_arrow_down</i></a></div>
+
+
+    <!-- Product Section-->
+    <div id="product" class="container"> <br><br>
+        <h4 class="center">Products</h4>
+    </div>
+
+
+    <!-- Service Section-->
+    <div id="service" class="container"><br><br>
+        <h4 class="center">Services</h4>
+    </div>
+
+
+    <!-- Contact Section-->
+    <div id="contact" class="container"><br><br>
+        <h4 class="center">Contact Us</h4>
+        <div class="row">
+            <div class="col s12 m5"><br>
+                <div class="card">
+                    <div class="card-image waves-effect waves-teal">
+                        <div onclick="mapLocation();">
+                            <img src="img/google_map.png" height="max-content" alt="Google Location" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m7 verticalLine">
+                <h5 class="center white-text">For Enquiry</h5>
+                <div class="container">
+                    <div class="content">
+                        <div class="left-side">
+                            <div class="address details">
+                                <i class="material-icons">location_on</i>
+                                <div class="topic">Address</div>
+                                <div class="custom-text-one">35-A1, Jayasimapuram</div>
+                                <div class="custom-text-one">P.N. Palayam, Coimbatore - 641037.</div>
+                            </div>
+                            <div class="phone details">
+                                <i class="material-icons">phone</i>
+                                <div class="topic">Phone</div>
+                                <div class="custom-text-one">+91 94437 56751</div>
+                                <div class="custom-text-one">+91 98947 47284</div>
+                            </div>
+                            <div class="email details">
+                                <i class="material-icons">email</i>
+                                <div class="topic">Email</div>
+                                <div class="custom-text-one">satron_engineering@yahoo.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section-->
+    <footer class="page-footer grey darken-4">
+        <div class="container grey darken-4">
+            <div class="row grey darken-4">
+                <div class="col l6 s12 verticalLine">
+                    <h6 class="white-text">For Enquiry</h6>
+                    <address>
+                        <p><i class="material-icons">location_on</i> 35-A1, Jayasimapuram, P.N. Palayam, Coimbatore -
+                            641037.</p>
+                        <p><i class="material-icons">phone</i> +91 94437 56751 / +91 98947 47284</p>
+                        <p><i class="material-icons">email</i> satron_engineering@yahoo.com</p>
+
+                    </address>
+                </div>
+                <div class="col l4 offset-l2 s12 verticalLine">
+                    <h6>Useful Links</h6>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3 center" href="#home">Home</a></li>
+                        <li><a class="grey-text text-lighten-3 center" href="#product">Products</a></li>
+                        <li><a class="grey-text text-lighten-3 center" href="#service">Services</a></li>
+                        <li><a class="grey-text text-lighten-3 center" href="#about">About</a></li>
+                        <li><a class="grey-text text-lighten-3 center" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center pulse"><a class=" btn-floating btn-large waves-light pulse" href="#home"> <i
+                        class="material-icons">keyboard_arrow_up</i></a></div>
+        </div>
+
+
+        <div class="footer-copyright black">
+            <div class="container">
+                © 2022, Satron Engineering, All Rights Reserved.
+                <a class="grey-text text-lighten-4 right" href="#!">by Ruban Divyaraj</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize/materialize.min.js"></script>
+</body>
+
+</html>
