@@ -1,165 +1,92 @@
 html,
 body {
-    overflow: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    transition: 1s;
-    height: 100%;
-}
-
-#home, #product, #contact, #service, #about{
-    height: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    /* Remove scrollbar space */
-    background: transparent;
-    /* Optional: just make scrollbar invisible */
-}
-
-.highlight {
-    background-color: #EEEEEE;
-    color: #221616;
-}
-
-#product,
-#contact,
-#service,
-#about,
-#contact {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.moto {
-    color: #EEEEEE;
-}
-
-#home {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: black;
-    min-height: 100vh;
-    max-width: 100%;
-    height: 600px;
-}
-
-.parallax {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(117, 117, 117, 0.5)), url(../img/header_img3.jpg);
-}
-
-.header {
-    left: 50%;
-    top: 50%;
-    transform: translate(0%, 100%);
-}
-
-nav {
-    background-color: black !important;
-}
-
-nav ul a:hover {
-    background-color: #EEEEEE !important;
-    color: black;
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
 
 hr {
-    border: none;
-    border-top: 5px double #EEEEEE;
-    color: #EEEEEE;
-    overflow: visible;
-    opacity: 50%;
-    text-align: center;
-    height: 5pt;
-    width: 50%;
+  border: none;
+  border-top: 5px double #eeeeee;
+  color: #eeeeee;
+  overflow: visible;
+  opacity: 50%;
+  text-align: center;
+  height: 5pt;
+  width: 50%;
 }
 
 hr:after {
-    background: rgb(0, 0, 0);
-    content: '§';
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
+  background: rgb(15, 15, 15);
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
 }
 
-h1 {
-
-    text-align: center;
-    color: #EEEEEE;
-    font-size: 6em;
+.slides li img {
+  background-attachment: fixed;
 }
 
-@media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 4em;
-    }
+/* ***** Contact CSS start ***** */
+.contact {
+  padding: 20px;
+  align-items: center;
+  margin-left: 15%;
+  border-left: thin solid grey;
 }
 
-.material-icons{
-    display: inline-flex;
-    vertical-align: top;
+.contact .details {
+  margin: 14px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact .details i {
+  font-size: 30px;
+  color: #424242;
+  margin-bottom: 10px;
+}
+
+.contact .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+  color: #424242;
+}
+
+.contact .details .custom-text-one {
+  font-size: 15px;
+  color: darkslategray;
+}
+
+/* ****** Contact CSS end ****** */
+
+.material-icons {
+  display: inline-flex;
+  vertical-align: top;
 }
 
 .verticalLine {
-    border-left: thin solid #EEEEEE;
-  }
-
-.btnOpacity{
-    opacity: 0.5;
-    margin: -15px;
+  border-left: thin solid #eeeeee;
 }
 
-/* 
-
-
-
-.waves-effect.waves-brown .waves-ripple {
-    background-color: #EEEEEE !important;
+.verticalLineGrey {
+  border-left: thin solid grey;
 }
 
-
-body {
-    background-color: #222831;
+.btnOpacity {
+  opacity: 0.3;
+  margin-top: -15px;
 }
 
-
-.full-height {
-    text-align: center;
-    min-height: 100vh;
+.whiteText{
+  color : #eeeeee;
 }
-
-.cardBox {
-    border: 1pt solid #222831;
-    border-radius: 5%;
-    ;
-    height: 400px;
-}
-
-.cardShadow {
-    box-shadow: 0 5px 5px #EEEEEE, 0 5px 10px #00ADB5;
-}
-
-
-
-header h1 {
-    text-align: center;
-    color: #EEEEEE;
-    font-size: 70px;
-}
-
-header h2 {
-    text-align: center;
-    color: #EEEEEE;
-}
-
-h4 {
-    text-align: left;
-}
-
-p {
-    color: #EEEEEE;
-}
-*/
