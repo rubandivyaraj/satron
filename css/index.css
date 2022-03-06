@@ -1,3 +1,9 @@
+/*
+  logo gradient: below #f15a24 & above #d4145a gradient 
+  logo position should be top right to bottom left
+*/
+@import url(../fonts/eurostile-cufonfonts/eurostile.TTF);
+
 html,
 body {
   overflow: scroll;
@@ -13,6 +19,65 @@ body {
   /* Optional: just make scrollbar invisible */
 }
 
+.brand-logo .responsive-img {
+  margin-top: 6%;
+}
+
+@media only screen and (min-width: 600px) {
+  #headerTitle {
+    font-size: 5em;
+    letter-spacing: 6px;
+    word-spacing: 10px;
+    padding-top: 3rem;
+    font-family: eurostile;
+    color: #eeeeee;
+  }
+  .slider .slides h6{
+    letter-spacing: 4px;
+    word-spacing: 5px;
+  }
+
+  #about p{
+    font-weight: 400;
+    font-size: medium;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: 4px;
+    word-spacing: 6px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .brand-logo .responsive-img {
+    max-width: 92%;
+  }
+
+  #headerTitle {
+    padding-top: 1em;
+    font-family: eurostile;
+    color: #eeeeee;
+    letter-spacing: 3px;
+  }
+
+  #about p{
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+  }
+
+  .slider .slides h2 {
+    font-size: 3rem;
+  }
+  .slider .slides h6 {
+    font-size: 1rem;
+    line-height: 1.3;
+    
+    letter-spacing: 3px;
+    word-spacing: 4px;
+  }
+}
+
 hr {
   border: none;
   border-top: 5px double #eeeeee;
@@ -21,7 +86,7 @@ hr {
   opacity: 50%;
   text-align: center;
   height: 5pt;
-  width: 50%;
+  width: 75%;
 }
 
 hr:after {
@@ -48,6 +113,7 @@ hr:after {
   margin: 14px;
   text-align: center;
   padding-top: 20px;
+  font-weight: 400;
 }
 
 .contact .details i {
@@ -64,7 +130,7 @@ hr:after {
 
 .contact .details .custom-text-one {
   font-size: 15px;
-  color: darkslategray;
+  color: #424242;
 }
 
 /* ****** Contact CSS end ****** */
@@ -83,10 +149,13 @@ hr:after {
 }
 
 .btnOpacity {
-  opacity: 0.5;
+  opacity: 0.75;
   margin-top: -15px;
 }
 
-.whiteText{
-  color : #eeeeee;
+.whiteText {
+  color: #eeeeee;
+}
+.charcoal {
+  background-color: #292826;
 }
