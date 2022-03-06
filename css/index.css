@@ -32,18 +32,26 @@ body {
     font-family: eurostile;
     color: #eeeeee;
   }
-  .slider .slides h6{
+  .slider .slides h6 {
     letter-spacing: 4px;
     word-spacing: 5px;
   }
 
-  #about p{
+  #about p {
     font-weight: 400;
     font-size: medium;
     text-align: justify;
     text-justify: inter-word;
     letter-spacing: 4px;
     word-spacing: 6px;
+  }
+
+  .verticalLine {
+    border-left: thin solid #eeeeee;
+  }
+
+  .verticalLineGrey {
+    border-left: thin solid grey;
   }
 }
 
@@ -54,12 +62,10 @@ body {
 
   #headerTitle {
     padding-top: 1em;
-    font-family: eurostile;
     color: #eeeeee;
-    letter-spacing: 3px;
   }
 
-  #about p{
+  #about p {
     text-align: justify;
     text-justify: inter-word;
     letter-spacing: 3px;
@@ -72,9 +78,17 @@ body {
   .slider .slides h6 {
     font-size: 1rem;
     line-height: 1.3;
-    
+
     letter-spacing: 3px;
     word-spacing: 4px;
+  }
+
+  .verticalLine {
+    border-top: thin solid #eeeeee;
+  }
+
+  .verticalLineGrey {
+    border-top: thin solid grey;
   }
 }
 
@@ -105,9 +119,13 @@ hr:after {
 .contact {
   padding: 20px;
   align-items: center;
-  margin-left: 15%;
-  border-left: thin solid grey;
 }
+
+#contact .card {
+  max-width: 80%;
+  margin-left: 10%;
+}
+
 
 .contact .details {
   margin: 14px;
@@ -138,14 +156,6 @@ hr:after {
 .material-icons {
   display: inline-flex;
   vertical-align: top;
-}
-
-.verticalLine {
-  border-left: thin solid #eeeeee;
-}
-
-.verticalLineGrey {
-  border-left: thin solid grey;
 }
 
 .btnOpacity {
