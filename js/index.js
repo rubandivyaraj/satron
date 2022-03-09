@@ -10,8 +10,7 @@ M.Slider.init(slider, {
 });
 
 function mapLocation() {
-  var URL =
-    "https://www.google.co.in/maps/place/Palayur,+P+N+Palayam,+Tamil+Nadu+641044/@11.0170942,76.9765038,15z/data=!3m1!4b1!4m5!3m4!1s0x3ba8584bd4364f8d:0x37275d90116754c8!8m2!3d11.0170946!4d76.9852586";
+  var URL = "https://goo.gl/maps/g4sKajVSN62RZieL6";
   window.open(URL, "_blank");
 }
 
