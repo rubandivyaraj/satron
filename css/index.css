@@ -42,8 +42,8 @@ body {
     font-size: medium;
     text-align: justify;
     text-justify: inter-word;
-    letter-spacing: 4px;
-    word-spacing: 6px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
   }
 
   .verticalLine {
@@ -71,13 +71,6 @@ body {
     color: #eeeeee;
   }
 
-  #about p {
-    text-align: justify;
-    text-justify: inter-word;
-    letter-spacing: 3px;
-    word-spacing: 4px;
-  }
-
   .slider .slides h2 {
     font-size: 3rem;
   }
@@ -87,6 +80,13 @@ body {
 
     letter-spacing: 3px;
     word-spacing: 4px;
+  }
+
+  #about p {
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: 1px;
+    word-spacing: 2px;
   }
 
   .verticalLine {
@@ -154,6 +154,8 @@ hr:after {
 .contact .details .custom-text-one {
   font-size: 15px;
   color: #424242;
+  word-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /* ****** Contact CSS end ****** */
@@ -185,6 +187,6 @@ hr:after {
   font-size: medium;
   text-align: justify;
   text-justify: inter-word;
-  letter-spacing: 2px;
-  word-spacing: 4px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
