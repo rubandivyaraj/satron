@@ -1,647 +1,342 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <!-- ---------
-    Thanks for find this comment. 
-    Reach me, if you found any glitch or issues or copyrights issue. 
-    My profile is in footer.
-    -------- -->
-
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Satron Engineering</title>
     <link rel="shortcut icon" href="img/satron-logo.png" type="image/x-icon" />
-
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
+    
+    <!-- Use a CDN for Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="stylesheet" href="css/index.css" />
-  </head>
+    
+    <!-- Load Google Fonts and Font Awesome from CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
 
-  <body>
+<body>
     <header id="home">
-      <!-- ********** Fixed nav with header ********** -->
-      <div class="navbar-fixed">
-        <nav class="black">
-          <div class="container">
-            <div class="navbar-wrapper">
-              <a href="index.html" class="brand-logo">
-                <img
-                  class="responsive-img"
-                  id="logo"
-                  src="img/satron-logo-vertical.png"
-                  alt="satron"
-                />
-              </a>
+        <div class="navbar-fixed">
+            <nav class="black">
+                <div class="container">
+                    <div class="navbar-wrapper">
+                        <a href="index.html" class="brand-logo">
+                            <img class="responsive-img" id="logo" src="img/satron-logo-vertical.png" alt="Satron Engineering" />
+                        </a>
+                        <a href="#" class="sidenav-trigger whiteText" data-target="mobile">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down nav navbar-nav">
+                            <li class="waves-effect waves-light"><a href="#home">HOME</a></li>
+                            <li class="waves-effect waves-light"><a href="#about">ABOUT</a></li>
+                            <li class="waves-effect waves-light"><a href="#product">PRODUCTS</a></li>
+                            <li class="waves-effect waves-light"><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-              <a
-                href="#"
-                class="sidenav-trigger whiteText"
-                data-target="mobile"
-              >
-                <i class="material-icons"> menu </i>
-              </a>
-              <ul class="right hide-on-med-and-down nav navbar-nav">
-                <li class="waves-effect waves-light">
-                  <a href="#home"> HOME </a>
-                </li>
-                <li class="waves-effect waves-light">
-                  <a href="#about"> ABOUT </a>
-                </li>
-                <li class="waves-effect waves-light">
-                  <a href="#product"> PRODUCTS </a>
-                </li>
-                <li class="waves-effect waves-light">
-                  <a href="#contact"> CONTACT </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <ul class="sidenav black" id="mobile">
-        <li>
-          <a class="waves-effect waves-light white-text" href="#home"> HOME </a>
-        </li>
-        <li>
-          <a class="waves-effect waves-light white-text" href="#about">
-            ABOUT
-          </a>
-        </li>
-        <li>
-          <a class="waves-effect waves-light white-text" href="#product">
-            PRODUCTS
-          </a>
-        </li>
-        <li>
-          <a class="waves-effect waves-light white-text" href="#contact">
-            CONTACT
-          </a>
-        </li>
-      </ul>
-
-      <!-- ********** Home & Header slider section ********** -->
-      <section class="slider">
-        <ul class="slides">
-          <li>
-            <img src="img/header_img3.jpg" />
-            <!-- random image -->
-            <div class="caption center-align">
-              <h2 id="headerTitle">SATRON ENGINEERING</h2>
-              <hr />
-              <h6 class="light grey-text text-lighten-3">
-                A marketing company. we sell products and raw materials at
-                affordable price.
-              </h6>
-              <br /><br />
-              <a
-                class="btn waves-effect waves-light grey darken-3 btnOpacity pulse"
-                href="#about"
-              >
-                Learn More
-                <i class="material-icons right"> keyboard_arrow_down </i>
-              </a>
-            </div>
-          </li>
-          <li>
-            <img src="img/header_img2.jpg" />
-            <!-- random image -->
-            <div class="caption left-align">
-              <h2>What we have!</h2>
-              <h6 class="light grey-text text-lighten-3">
-                We have quality foundry products like..
-              </h6>
-              <br />
-              <br />
-              <a
-                class="btn waves-effect waves-teal grey darken-3 btnOpacity pulse"
-                href="#product"
-              >
-                View Product
-                <i class="material-icons right">keyboard_arrow_right </i>
-              </a>
-            </div>
-          </li>
-          <li>
-            <img src="img/header_img1.jpg" />
-            <!-- random image -->
-            <div class="caption right-align">
-              <h2>Grab your phone..!</h2>
-              <h6 class="light grey-text text-lighten-3">
-                Call us today, Get your products at your door step..
-              </h6>
-              <br /><br />
-              <a
-                class="btn waves-effect waves-light grey darken-3 btnOpacity pulse"
-                href="#contact"
-              >
-                <i class="material-icons right"> keyboard_arrow_left </i> For
-                Enquiry
-              </a>
-            </div>
-          </li>
+        <ul class="sidenav black" id="mobile">
+            <li><a class="waves-effect waves-light white-text" href="#home">HOME</a></li>
+            <li><a class="waves-effect waves-light white-text" href="#about">ABOUT</a></li>
+            <li><a class="waves-effect waves-light white-text" href="#product">PRODUCTS</a></li>
+            <li><a class="waves-effect waves-light white-text" href="#contact">CONTACT</a></li>
         </ul>
-      </section>
+
+        <section class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/header_img3.jpg" loading="lazy" alt="Header Image 1" />
+                    <div class="caption center-align">
+                        <h2 id="headerTitle">SATRON ENGINEERING</h2>
+                        <hr />
+                        <h6 class="light grey-text text-lighten-3">A marketing company. We sell products and raw materials at affordable prices.</h6>
+                        <br /><br />
+                        <a class="btn waves-effect waves-light grey darken-3 btnOpacity pulse" href="#about">Learn More<i class="material-icons right">keyboard_arrow_down
+                        </i></a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/header_img2.jpg" loading="lazy" alt="Header Image 2" />
+                    <div class="caption left-align">
+                        <h2>What we have!</h2>
+                        <h6 class="light grey-text text-lighten-3">We have quality foundry products like..</h6>
+                        <br /><br />
+                        <a class="btn waves-effect waves-teal grey darken-3 btnOpacity pulse" href="#product">View Product<i class="material-icons right">keyboard_arrow_right</i></a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/header_img1.jpg" loading="lazy" alt="Header Image 3" />
+                    <div class="caption right-align">
+                        <h2>Grab your phone..!</h2>
+                        <h6 class="light grey-text text-lighten-3">Call us today, Get your products at your doorstep..</h6>
+                        <br /><br />
+                        <a class="btn waves-effect waves-light grey darken-3 btnOpacity pulse" href="#contact"><i class="material-icons right">keyboard_arrow_left</i> For Enquiry</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </header>
 
-    <!-- ********** Section icon boxes ********** -->
     <section id="about" class="center">
-      <br /><br />
-      <h4 class="center grey-text text-darken-3">About Us</h4>
-      <br />
-      <div class="section section-icons grey lighten-4">
-        <div class="container teal-text content">
-          <p>
-            &emsp; &emsp; SATRON engineering was established in the year of
-            2005. At first we started analysing the products used in the foundry
-            industry. Due to the demand in getting good quality raw materials,
-            we planned to have a company that deals with good quality material
-            in foundry industry. We are having suppliers and customers in and
-            around all over INDIA. Our company has more than 15 years of
-            experience in this foundry field. We supplies and exports good
-            quality crucibles, flux, die coat, Metal putty and Foundry Raw
-            materials etc. We are withstanding because of our best service and
-            customer satisfaction. We are accepting and delivering foundry
-            related retail and bulk orders to customers on time. Our motto is to
-            expand our services to all types of foundry products and business to
-            worldwide.
-          </p>
+        <br /><br />
+        <h4 class="center grey-text text-darken-3">About Us</h4>
+        <br />
+        <div class="section section-icons grey lighten-4">
+            <div class="container teal-text content">
+                <p>
+                    &emsp; &emsp; SATRON engineering was established in 2005. We started analyzing products used in the foundry industry. Due to the demand for good quality raw materials, we planned to have a company that deals with quality material in the foundry industry. We have suppliers and customers all over INDIA. Our company has more than 15 years of experience in this field. We supply and export quality crucibles, flux, die coat, metal putty, and foundry raw materials. Our motto is to expand our services to all types of foundry products and businesses worldwide.
+                </p>
+            </div>
+            <div class="container">
+                <br />
+                <h5 class="center">We're best in</h5>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card-panel">
+                            <i class="material-icons large">settings</i>
+                            <h5>Quality</h5>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card-panel">
+                            <i class="material-icons large">attach_money</i>
+                            <h5>Pricing</h5>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card-panel">
+                            <i class="material-icons large">shopping_cart</i>
+                            <h5>On Time Delivery</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section class="section section-follow grey darken-4 whiteText center" id="counters">
         <div class="container">
-          <br />
-          <h5 class="center">We're best in</h5>
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="card-panel">
-                <i class="material-icons large"> settings </i>
-                <h5>Quality</h5>
-                <!-- <p> Grade one raw materials. </p> -->
-              </div>
+            <div class="row">
+                <div class="col s12">
+                    <h4>We're good with Numbers</h4>
+                    <div class="row center">
+                        <div class="col s12 m3">
+                            <h3><span class="counter" data-target="15">0</span><span>+</span></h3>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="col s12 m3">
+                            <h3><span class="counter" data-target="20">0</span><span>+</span></h3>
+                            <p>Products & Raw Materials</p>
+                        </div>
+                        <div class="col s12 m3">
+                            <h3><span class="counter" data-target="350">0</span><span>+</span></h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="col s12 m3">
+                            <h3><span class="counter" data-target="12">0</span><span>+</span></h3>
+                            <p>Manufacturing Partners</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col s12 m4">
-              <div class="card-panel">
-                <i class="material-icons large"> attach_money </i>
-                <h5>Pricing</h5>
-                <!-- <p> Aggressive pricing for all products. </p> -->
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card-panel">
-                <i class="material-icons large"> shopping_cart </i>
-                <h5>On Time Delivery</h5>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Section: Follow -->
-    <section
-      class="section section-follow grey darken-4 whiteText center"
-      id="counters"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <h4>We're good with Numbers</h4>
-            <div class="row center">
-              <div class="col s12 m3">
-                <h3>
-                  <span class="counter" data-target="15">0</span>
-                  <span>+</span>
-                </h3>
-                <p>Years of Experience</p>
-              </div>
-              <div class="col s12 m3">
-                <h3>
-                  <span class="counter" data-target="20">0</span>
-                  <span>+</span>
-                </h3>
-                <p>Products & Raw Materials</p>
-              </div>
-              <div class="col s12 m3">
-                <h3>
-                  <span class="counter" data-target="350">0</span>
-                  <span>+</span>
-                </h3>
-                <p>Happy Customers</p>
-              </div>
-              <div class="col s12 m3">
-                <h3>
-                  <span class="counter" data-target="12">0</span>
-                  <span>+</span>
-                </h3>
-                <p>Manufacturing Partners</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ********** Section icon boxes ********** -->
     <section id="product" class="center">
-      <br /><br />
-      <h4 class="center grey-text text-darken-3">Products</h4>
-      <br />
-      <div class="section section-icons grey lighten-4">
-        <div class="container">
-          <div class="row grey-text text-darken-3">
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="img/products/004-Crucible.jpg" />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
-                    Graphite Crucibles
-                    <i class="material-icons right"> more_vert </i>
-                  </span>
-                  <p><a href="#"> </a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
-                    Graphite Crucibles
-                    <i class="material-icons right"> close </i>
-                  </span>
-                  <p>
-                    &emsp; Graphite crucibles are containers that are used to
-                    melt different metals like gold, silver, aluminium, brass,
-                    gunmetal and copper at corresponding temperature. It is made
-                    by natural graphite raw material.
-                  </p>
-                </div>
-              </div>
-            </div>
+    <section id="product" class="center">
+        <br /><br />
+        <h4 class="center grey-text text-darken-3">Products</h4>
+        <br />
+        <div class="section section-icons grey lighten-4">
+            <div class="container">
+                <div class="row grey-text text-darken-3">
+                    <!-- Product Cards -->
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/products/004-Crucible.jpg" loading="lazy" alt="Graphite Crucibles" />
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="img/products/008-glob.jpg" />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
-                    Silicon Crucibles
-                    <i class="material-icons right"> more_vert </i>
-                  </span>
-                  <p><a href="#"> </a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
-                    Silicon Crucibles
-                    <i class="material-icons right"> close </i>
-                  </span>
-                  <p>
-                    &emsp; Silicon Carbide Crucibles are made up of carbon
-                    bonded silicon and graphite material. It withstand the
-                    temperature up to 1600 degree. It is used for melting the
-                    Gold, silver, Brass, Aluminium and cast iron. It is also
-                    used for melting the zinc for production of zinc oxide. It
-                    has advantages of high thermal shock capacity, High
-                    capacity, Low energy consumption and high conductivity.
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/products/008-glob.jpg" loading="lazy" alt="Silicon Crucibles" />
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img
-                    class="activator"
-                    src="img/products/006-Glob-stand.jpg"
-                  />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
-                    Silicon Carbide Stand
-                    <i class="material-icons right"> more_vert </i>
-                  </span>
-                  <p><a href="#"> </a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
-                    Silicon Carbide Stand
-                    <i class="material-icons right"> close </i>
-                  </span>
-                  <p>
-                    &emsp; Silicon Carbide Stand is used to support the
-                    crucibles by giving fully supporting flat surface with high
-                    conduction and thermal expansion rate that is similar to the
-                    crucibles. These stands have different dimensions and shape
-                    which depends on the application.
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/products/006-Glob-stand.jpg" loading="lazy" alt="Silicon Carbide Stand" />
+                            </div>
+			</div>
+                    </div>
 
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="img/products/005-Rose-soil.jpg" />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
-                    Foundry flux <i class="material-icons right"> more_vert </i>
-                  </span>
-                  <p><a href="#"> </a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
-                    Foundry flux <i class="material-icons right"> close </i>
-                  </span>
-                  <p>
-                    &emsp; Foundry flux is used to remove impurities like
-                    oxidation losses in metals during melting. It improves the
-                    metal quality and recovery rate of the metal. It reduces the
-                    inclusions and loss of metal during castings.
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/products/005-Rose-soil.jpg" loading="lazy" alt="Foundry Flux" />
+                            </div>
+			</div>
+                    </div>
 
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img
-                    class="activator"
-                    src="img/products/003-White-bucket.jpg"
-                  />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
-                    Foundry Diecoat
-                    <i class="material-icons right"> more_vert </i>
-                  </span>
-                  <p><a href="#"> </a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
-                    Foundry Diecoat <i class="material-icons right"> close </i>
-                  </span>
-                  <p>
-                    &emsp; Diecoat is a chemical that is used to smooth the
-                    outer surface of the molten metal. It gives better outer
-                    cover and controls solidification. This will stick with the
-                    molten metal.
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/products/003-White-bucket.jpg" loading="lazy" alt="Foundry Diecoat" />
+                            </div>
+			</div>
+                    </div>
 
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img
-                    class="activator"
-                    src="img/products/001-Aluminum-roll.jpg"
-                  />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
-                    Degassing Tablets
-                    <i class="material-icons right"> more_vert </i>
-                  </span>
-                  <p><a href="#"> </a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
-                    Degassing Tablets
-                    <i class="material-icons right"> close </i>
-                  </span>
-                  <p>
-                    &emsp; Degassing tablets are additives used to remove the
-                    gasses in all varieties of alloys. When the tablets
-                    dissolves with the molten metal, the tablets produces
-                    chlorine which removes all types of dissolved hydrogen and
-                    other gases in the metal.
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/products/001-Aluminum-roll.jpg" loading="lazy" alt="Degassing Tablets" />
+                            </div>
+			</div>
+                    </div>
 
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="img/products/009-powder.jpg" />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
-                    Modifier Flux
-                    <i class="material-icons right"> more_vert </i>
-                  </span>
-                  <p><a href="#"> </a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
-                    Modifier Flux <i class="material-icons right"> close </i>
-                  </span>
-                  <p>
-                    &emsp; Modifier is used to remove oxide formation and other
-                    non-metallic impurities from the alloys. Especially in sand
-                    castings, in order to maintain the mechanical properities
-                    the alloy should be modified prior to castings. It is in
-                    blue colour. It can be used as protective flux.
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/products/009-powder.jpg" loading="lazy" alt="Modifier Flux" />
+                            </div>
+			</div>
+                    </div>
 
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="img/products/002-Brass-box.jpg" />
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/products/002-Brass-box.jpg" loading="lazy" alt="Metal Putty" />
+                            </div>
+			</div>
+                    </div>
                 </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
-                    Metal Putty <i class="material-icons right"> more_vert </i>
-                  </span>
-                  <p><a href="#"> </a></p>
+                <div>
+                    <p class="yellow lighten-4 grey-text text-darken-4">
+                        Note:
+                        <em>
+                            Provided descriptions and details are at a high level. For more details, <a href="#contact">Contact us.</a> The above images may vary from the actual product.
+                        </em>
+                    </p>
                 </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
-                    Metal Putty <i class="material-icons right"> close </i>
-                  </span>
-                  <p>
-                    Metal Putty (Aluminium, Brass and gun metal) is used to
-                    cover the pin holes, cracks and any cosmetic problems in
-                    casting. It is very strong with good adhesion property. It
-                    withstands high temperature. It is used to improve the outer
-                    look of any metal. After applying the putty, the metal looks
-                    like perfect finishing with smooth and soft surface.
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
-          <div>
-            <p class="yellow lighten-4 grey-text text-darken-4">
-              Note:
-              <em>
-                Provided description and details are in high level. For more
-                details, <a href="#contact">Contact us.</a> This above image
-                might be vary from the actual product.
-              </em>
-            </p>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- ********* Contact Section ************ -->
     <section id="contact" class="center">
-      <br /><br />
-      <h4 class="center grey-text text-darken-3">Contacts</h4>
-      <br />
-      <div class="section section-icons grey lighten-4">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-image medium waves-effect waves-teal">
-                  <div onclick="mapLocation();">
-                    <img
-                      src="img/google_map.png"
-                      height="fit-content"
-                      alt="Google Location"
-                    />
-                  </div>
+        <br /><br />
+        <h4 class="center grey-text text-darken-3">Contacts</h4>
+        <br />
+        <div class="section section-icons grey lighten-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image medium waves-effect waves-teal">
+                                <div onclick="mapLocation();">
+                                    <img src="img/google_map.png" height="fit-content" alt="Google Location" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="contact verticalLineGrey">
+                            <div class="address details">
+                                <i class="material-icons">location_on</i>
+                                <div class="topic">Address</div>
+                                <div class="custom-text-one">35-A1, Jayasimapuram</div>
+                                <div class="custom-text-one">P.N. Palayam, Coimbatore - 641037.</div>
+                            </div>
+                            <div class="phone details">
+                                <i class="material-icons pulse">phone</i>
+                                <div class="topic">Phone</div>
+                                <div class="custom-text-one">+91 94437 56751</div>
+                            </div>
+                            <div class="email details">
+                                <i class="material-icons">email</i>
+                                <div class="topic">Email</div>
+                                <div class="custom-text-one">satronengineering@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col s12 m6">
-              <div class="contact verticalLineGrey">
-                <div class="address details">
-                  <i class="material-icons">location_on</i>
-                  <div class="topic">Address</div>
-                  <div class="custom-text-one">35-A1, Jayasimapuram</div>
-                  <div class="custom-text-one">
-                    P.N. Palayam, Coimbatore - 641037.
-                  </div>
-                </div>
-                <div class="phone details">
-                  <i class="material-icons pulse">phone</i>
-                  <div class="topic">Phone</div>
-                  <div class="custom-text-one">+91 94437 56751</div>
-                </div>
-                <div class="email details">
-                  <i class="material-icons">email</i>
-                  <div class="topic">Email</div>
-                  <div class="custom-text-one">satronengineering@gmail.com</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer Section-->
     <footer class="page-footer grey darken-4">
-      <div class="container grey darken-4">
-        <div class="row grey darken-4">
-          <div class="col l6 s12 m4 verticalLine whiteText">
-            <h6>For Enquiry</h6>
-            <address>
-              <p>
-                <i class="material-icons"> location_on </i> 35-A1,
-                Jayasimapuram, P.N. Palayam, Coimbatore - 641037.
-              </p>
-              <p><i class="material-icons"> phone </i> +91 94437 56751</p>
-              <p>
-                <i class="material-icons"> email </i>
-                satronengineering@gmail.com
-              </p>
-            </address>
-          </div>
-          <div class="col l4 offset-l2 s12 m4 verticalLine whiteText">
-            <h6>Useful Links</h6>
-            <ul>
-              <li>
-                <a class="grey-text text-lighten-3 center" href="#home">
-                  Home
+        <div class="container grey darken-4">
+            <div class="row grey darken-4">
+                <div class="col l6 s12 m4 verticalLine whiteText">
+                    <h6>For Enquiry</h6>
+                    <address>
+                        <p>
+                            <i class="material-icons">location_on</i> 35-A1, Jayasimapuram, P.N. Palayam, Coimbatore - 641037.
+                        </p>
+                        <p><i class="material-icons">phone</i> +91 94437 56751</p>
+                        <p><i class="material-icons">email</i> satronengineering@gmail.com</p>
+                    </address>
+                </div>
+                <div class="col l4 offset-l2 s12 m4 verticalLine whiteText">
+                    <h6>Useful Links</h6>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3 center" href="#home">Home</a></li>
+                        <li><a class="grey-text text-lighten-3 center" href="#about">About</a></li>
+                        <li><a class="grey-text text-lighten-3 center" href="#product">Products</a></li>
+                        <li><a class="grey-text text-lighten-3 center" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center pulse">
+                <a class="btn-floating btn-large waves-light pulse grey darken-3" href="#home">
+                    <i class="material-icons">keyboard_arrow_up</i>
                 </a>
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3 center" href="#about">
-                  About
-                </a>
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3 center" href="#product">
-                  Products
-                </a>
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3 center" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-        <div class="center pulse">
-          <a
-            class="btn-floating btn-large waves-light pulse grey darken-3"
-            href="#home"
-          >
-            <i class="material-icons"> keyboard_arrow_up </i>
-          </a>
-        </div>
-      </div>
 
-      <section class="footer-copyright black whiteText">
-        <div class="container">
-          <small class="left">
-            <p>&copy; Copyright 2022, Satron Engineering.</p>
-            <p>All rights reserved.</p>
-          </small>
-          <small class="right">
-            <p>Designed by rubandivyaraj</p>
-            <span>
-              <div class="row">
-                <div class="col s4">
-                  <a href="https://github.com/rubandivyaraj">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </div>
-                <div class="col s4">
-                  <a href="https://in.linkedin.com/in/ruban-divyaraj-0834aaa5">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div class="col s4">
-                  <a href="https://www.instagram.com/divyarajruban/">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </span>
-          </small>
-        </div>
-      </section>
+        <section class="footer-copyright black whiteText">
+            <div class="container">
+                <small class="left">
+                    <p>&copy; Copyright 2022, Satron Engineering.</p>
+                    <p>All rights reserved.</p>
+                </small>
+                <small class="right">
+                    <p>Designed by rubandivyaraj</p>
+                    <span>
+                        <div class="row">
+                            <div class="col s4">
+                                <a href="https://github.com/rubandivyaraj">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="col s4">
+                                <a href="https://in.linkedin.com/in/ruban-divyaraj-0834aaa5">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <div class="col s4">
+                                <a href="https://www.instagram.com/divyarajruban/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </span>
+                </small>
+            </div>
+        </section>
     </footer>
 
-    <!-- ********** JavaScript at end of body for optimized loading ********** -->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+    <!-- JavaScript at end of body for optimized loading -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <script type="text/javascript" src="js/index.js" defer></script>
+</body>
 </html>
